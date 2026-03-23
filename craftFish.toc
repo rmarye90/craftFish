@@ -1,0 +1,10 @@
+## Interface: 120000, 120001
+## Version: 1.0.0
+## Title: craftFish
+## Notes: Addon Poisson d'Avril pour faux Hauts Faits
+## Author: marye
+
+Core.lua
+UI\FakeToast.lua
+UI\FakePanel.lua
+Commands.lua
