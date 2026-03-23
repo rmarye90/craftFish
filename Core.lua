@@ -6,10 +6,10 @@ CraftFish.Data = {}
 CraftFish.Data.FakeAchievements = {
     {
         name = "Faiseur de Oh Waouh !",
-        description = "Avoir construit plus de 1 000 escaliers en colimacon.",
-        reward = "Titre : Maitre escalier",
+        description = "Avoir construit plus de 1 000 escaliers en colimaçon.",
+        reward = "Titre : Maître des Escaliers",
         points = 0,
-        icon = "Interface\\Icons\\INV_Misc_Fish_04",
+        icon = "Interface\\AddOns\\craftFish\\assets\\stair.png",
     },
 }
 

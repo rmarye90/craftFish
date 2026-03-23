@@ -5,6 +5,7 @@ SlashCmdList.CRAFTFISH = function(message)
 
     if command == "" then
         print("craftFish: /craftfish reveal pour reveler la blague.")
+        print("craftFish: /craftfish debug on|off pour activer les logs de diagnostic.")
         return
     end
 
@@ -19,5 +20,12 @@ SlashCmdList.CRAFTFISH = function(message)
         return
     end
 
-    print("craftFish: commande inconnue. Utilise /craftfish ou /craftfish reveal.")
+    if command == "debug on" or command == "debug off" then
+        if type(CraftFish.UI.SetDebugEnabled) == "function" then
+            CraftFish.UI.SetDebugEnabled(command == "debug on")
+        end
+        return
+    end
+
+    print("craftFish: commande inconnue. Utilise /craftfish, /craftfish reveal, /craftfish debug on ou /craftfish debug off.")
 end
